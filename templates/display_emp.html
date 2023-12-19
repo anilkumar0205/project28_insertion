@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>dispaly_emptable</h1>
+    <table border="3px">
+        <tr><th>empno</th><th>ename</th><th>dept_no</th><th>sal</th><th>job</th><th>email</th></tr>
+{% for empo in emp %}
+    <tr>
+        <td>{{ empo.emp_no }}</td>
+        <td>{{ empo.ename }}</td>
+        <td>{{ empo.dept_no }}</td>
+        <td>{{ empo.sal }}</td>
+        <td>{{ empo.job }}</td>
+        <td>{{ empo.email }}</td>
+    </tr>
+{% endfor %}
+    </table>
+    
+</body>
+</html>
